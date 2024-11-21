@@ -1,0 +1,25 @@
+{
+  "intents": [
+      
+      {"tag": "goodbye", "patterns": ["Bye", "Goodbye", "See you later"], "responses": ["Goodbye!", "See you later!"]},
+      {"tag": "contact", "patterns": ["i want to Save a new contact", "Add contact", "Store contact", "i want to add a new contact", "store a contact"],
+       "responses": ["Sure, please provide the contact name.", "What's the name of the contact?"],
+       "context_set": "contact"},
+      {"tag": "name", "patterns": [], "responses": [], "context_filter": "contact"},
+      {"tag": "show_contact", "patterns": ["Show contacts", "Display contacts", "List contacts"],
+       "responses": ["Sure, here are your contacts: {contacts}"],
+       "context_filter": "contact"},
+      {"tag": "modify_contact", "patterns": ["Modify contact", "Update contact", "Change contact"],
+       "responses": ["Sure, please provide the contact name you want to modify."],
+       "context_filter": "contact"},
+      {"tag": "delete_contact", "patterns": ["Delete contact", "Remove contact", "Forget contact"],
+       "responses": ["Sure, please provide the contact name you want to delete."],
+       "context_filter": "contact"},
+      {"tag": "discoverability", "patterns": ["How do I use this?", "What can you do?", "Tell me more"],
+       "responses": ["I can help you save, modify, and delete contacts. Just ask!"]},
+      {"tag": "thanks", "patterns": ["Thanks", "Thank you", "Appreciate it"],
+       "responses": ["You're welcome!", "No problem, happy to help!"]},
+      {"tag": "manageusername", "patterns": ["what is my name", "who am i", "do you know me", "tell me my name"],
+       "responses": [" "]}
+  ]
+}
