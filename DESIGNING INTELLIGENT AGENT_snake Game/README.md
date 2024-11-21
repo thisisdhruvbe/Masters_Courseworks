@@ -1,3 +1,7 @@
+VIDEO PRESENTATION link:
+https://www.youtube.com/watch?v=_ACbtuY10ec
+
+
 This repository contains the Python scripts for a Q-learning based autonomous agent designed to play and master the Snake game. Each script serves a specific role, from managing the game environment to implementing the Q-learning algorithm, automating experiments, and visualizing results. The project demonstrates how reinforcement learning techniques can be applied to a classic game, offering insights into AI training dynamics and decision-making processes
 
 1. Snake.py
@@ -17,4 +21,5 @@ Functionality:
 Functionality:
     -Reads performance data from the CSV file.
     -Generates visualizations using matplotlib to illustrate learning effectiveness across different settings
+
 
